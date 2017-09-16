@@ -1,7 +1,25 @@
-author: Sith Jaisong
-description: My personal website and blog about data analysis, applied statistics, R
-highlighter: rouge
-permalink: /blog/:categories/:year/:month/:day/:title.html
+# Site settings
+title: Gaston Sanchez
+email:
+description: > # this means to ignore newlines until "baseurl:"
+  Gaston Sanchez website.
+url: http://gastonsanchez.com
+baseurl: /
+
+# User setting
+owner: Gaston Sanchez
+email: "gaston.stat [at] gmail.com"
+github_username: gastonstat
+linkedin_username: sanchezgaston
+address:
+  - line: 309 Evans Hall
+  - line: University of California Berkeley
+  - line: Berkeley, CA 94720-3860 
+copyright: "Gaston Sanchez"
+
+# API settings
+google_api_key:
+
+# Build settings
 markdown: kramdown
-exclude: ["Rmd", ".DS_Store", "README.md"]
-excerpt_separator: <!--more-->
+highlighter: rouge

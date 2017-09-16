@@ -1,9 +1,41 @@
+<footer>
+   <div class="container">
+    <div class="row">
 
-<div id="footer">
-	&copy; <a href="/">Sith Jaisong</a>. All contents under
-	<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">(CC) BY-NC-SA license</a>,
-	unless otherwise noted.
-	<br/><br/>
-	Did you find this site useful? If yes, consider helping me with my
-	<a href="http://amzn.com/w/A8P707HJ94QI" target="_blank">wishlist</a>.
-</div>
+      <div class="col-md-2"></div>
+      <div class="col-md-8 text-center">
+
+        <h4><strong>Contact Info</strong>
+        </h4>
+        <p>
+          {% for address in site.address %}
+          {{ address.line }}<br>
+          {% endfor %}
+        </p>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-envelope-o fa-fw"></i> {{ site.email }}
+          </li>
+        </ul>
+        <br>
+        <ul class="list-inline">
+          <li>
+            <a id="icon" href="GastonSanchez_resume.pdf" target="_blank"><i class="fa fa-user fa-fw fa-2x"></i></a>
+          </li>
+          <li>
+            <a id="icon" href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-fw fa-2x"></i></a>
+          </li>
+          <li>
+            <a id="icon" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+          </li>
+        </ul>
+        <hr>
+        <p class="text-muted">Copyright &copy; {{ site.copyright }} 2010-20{{ site.time | date: '%y' }}<br>
+        Did you find this site useful? If yes, consider helping me with my 
+        <a href="http://amzn.com/w/A8P707HJ94QI" target="_blank">wishlist</a>.</p>
+
+      </div>
+      <div class="col-md-2"></div>
+
+    </div>
+  </div>
+</footer>
